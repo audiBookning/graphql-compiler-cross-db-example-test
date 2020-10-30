@@ -4,8 +4,8 @@ services:
     image: orientdb:2.2.37
     restart: always
     ports:
-      - "127.0.0.1:2480:2480"
-      - "127.0.0.1:2424:2424"
+      - "127.0.0.1:2481:2480"
+      - "127.0.0.1:2421:2424"
     environment:
       ORIENTDB_ROOT_PASSWORD: cross-db-example
   postgres:
@@ -16,7 +16,7 @@ services:
       POSTGRES_DB: xdb
       POSTGRES_PASSWORD: cross-db-example
     ports:
-      - "127.0.0.1:5432:5432"
+      - "127.0.0.1:5431:5432"
   # web:
   #   build:
   #     context: .
